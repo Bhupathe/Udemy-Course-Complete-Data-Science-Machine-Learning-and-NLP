@@ -2,3 +2,9 @@ scikit-learn
 pandas
 numpy
 ipykernel 
+lxml
+html5lib
+beautifulsoup4
+openpyxl 
+matplotlib 
+seaborn 
