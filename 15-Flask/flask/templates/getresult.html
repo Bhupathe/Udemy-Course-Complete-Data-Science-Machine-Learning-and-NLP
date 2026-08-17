@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Results</title>
+</head>
+<body>
+    <h2>HTML forms</h2>
+
+    <form action="/getresults" method="post">
+        <label for="Science">Science:</label><br>
+        <input type="text" name="science" id="science" value="0"><br>
+        <label for="Maths">Maths:</label><br>
+        <input type="text" name="maths" id="maths" value="0"><br>
+        <label for="C">C:</label><br>
+        <input type="text" name="c" id="c" value="0"><br>
+        <label for="datascience">Data Science:</label><br>
+        <input type="text" name="datascience" id="datascience" value="0"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page '/submit'</p>
+</body>
+</html>

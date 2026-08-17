@@ -1,0 +1,14 @@
+<html>
+    <h2>Final Results</h2>
+    <body>
+        <table>
+            {# The condition expression is similar to python coe #}
+            {% for key, value in results.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <td>{{ value }}</td>
+            </tr>
+            {% endfor %} {# if you used if then end if #}
+        </table>
+    </body>
+</html>
