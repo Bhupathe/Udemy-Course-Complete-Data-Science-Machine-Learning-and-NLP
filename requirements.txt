@@ -8,3 +8,5 @@ beautifulsoup4
 openpyxl 
 matplotlib 
 seaborn 
+flask 
+streamlit
