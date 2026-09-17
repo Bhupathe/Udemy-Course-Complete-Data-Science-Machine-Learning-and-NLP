@@ -1,3 +1,4 @@
+statsmodels 
 scikit-learn
 pandas
 numpy
@@ -10,4 +11,4 @@ matplotlib
 seaborn 
 flask 
 streamlit
-imblearn 
+imblearn
