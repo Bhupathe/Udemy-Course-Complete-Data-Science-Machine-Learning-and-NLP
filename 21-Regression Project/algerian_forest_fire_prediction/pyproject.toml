@@ -1,3 +1,16 @@
 
+[project]
+name = "algerian-forest-fire-prediction"
+version = "0.1.0"
+description = "Algerian Forest Fire Prediction Flask application"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "flask",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "gunicorn",
+]
+
 [tool.vercel]
-entrypoint = "application:application"
+entrypoint = "application.py"
