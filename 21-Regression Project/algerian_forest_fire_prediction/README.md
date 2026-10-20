@@ -124,30 +124,25 @@ regions and the available sample period.
 
 ## 6. Models and Evaluation
 
-The notebook evaluates two regression techniques on the held-out test
-set:
+Results recorded in `20.3-Feature Selection and Model Training.ipynb`:
 
--   Linear Regression
--   Lasso Regression
+| Model | MAE (Lower is Better) | R² (Higher is Better) |
+|---|---:|---:|
+| Linear Regression | 0.5468 | 0.9848 |
+| Lasso Regression | 1.1332 | 0.9492 |
+| Ridge Regression | 0.5642 | 0.9843 |
+| Elastic Net | 1.8822 | 0.8753 |
+| LassoCV (5-fold CV) | 0.6200 | 0.9821 |
+| RidgeCV (5-fold CV) | 0.5642 | 0.9843 |
+| ElasticNetCV (5-fold CV) | 0.6576 | 0.9814 |
 
-The reported metrics are:
+### Model Selection and Conclusion
 
-  Metric                             Linear Regression   Lasso Regression
-  -------------------------------- ------------------- ------------------
-  Mean Squared Error (MSE)                      0.6871             2.9733
-  Mean Absolute Error (MAE)                     0.6313             1.2377
-  Root Mean Squared Error (RMSE)                0.8289             1.7243
-  R² score                                      0.9881             0.9487
+Linear Regression performed best among the seven evaluated models, achieving the lowest MAE (**0.5468**) and the highest R² score (**0.9848**).
 
-### How to interpret the metrics
+A lower MAE indicates smaller average prediction errors, while a higher R² score indicates that the model explains more of the variation in FWI on the evaluated test set.
 
--   **MSE, MAE, and RMSE:** lower values indicate smaller prediction
-    errors.
--   **R²:** a value closer to 1 indicates that the model explains more
-    of the variation in the test-set target values.
-
-Linear Regression has lower error values and a higher R² score than
-Lasso Regression in the documented experiment.
+Based on these results, **Linear Regression is selected as the preferred model** for predicting the Fire Weather Index (FWI) in this experiment.
 
 ## 7. Model Selection and Conclusion
 
