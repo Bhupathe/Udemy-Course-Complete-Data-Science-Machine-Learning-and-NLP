@@ -12,3 +12,5 @@ seaborn
 flask 
 streamlit
 imblearn
+plotly 
+nbformat 
